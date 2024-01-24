@@ -11,4 +11,5 @@ string description = Console.ReadLine();
 // Name and current version of the program 
 string name = "Doom";
 string version = "3000"; 
-Console.WriteLine("The " + type + " " + description + " of " + c + " " + d + "!");
+Console.WriteLine("The " + type + " " + description + " of " + name + " " + version + "!");
+
