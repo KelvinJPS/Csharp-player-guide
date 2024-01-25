@@ -12,4 +12,3 @@ string description = Console.ReadLine();
 string name = "Doom";
 string version = "3000"; 
 Console.WriteLine("The " + type + " " + description + " of " + name + " " + version + "!");
-
