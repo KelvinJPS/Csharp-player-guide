@@ -20,8 +20,9 @@ if (y < 0)
         Console.WriteLine("The enemy is to the southeast");
 
     }
+}
 else if (y == 0)
-    {
+{
     if (x < 0)
     {
         Console.WriteLine("The enemy is to the west");
@@ -35,25 +36,25 @@ else if (y == 0)
         Console.WriteLine("The enemy is to the east");
 
     }
-    }
+}
 
 else if (y > 0)
+{
+    if (x < 0)
     {
-        if (x < 0)
-        {
-            Console.WriteLine("The enemy is to the orthwest");
-        }
-        else if (x == 0)
-        {
-            Console.WriteLine("The enemy is to north");
-        }
-        else if (x > 0)
-        {
-            Console.WriteLine("The enemy is to the northeast");
-
-        }
+        Console.WriteLine("The enemy is to the northwest");
     }
-}   
+    else if (x == 0)
+    {
+        Console.WriteLine("The enemy is to north");
+    }
+    else if (x > 0)
+    {
+        Console.WriteLine("The enemy is to the northeast");
+
+    }
+}
+  
 
 
 
