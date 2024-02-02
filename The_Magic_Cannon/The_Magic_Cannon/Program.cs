@@ -1,4 +1,5 @@
-﻿
+﻿// Fire blast ocurr at  the 3th turn and electric blast occur at the 5th, indexer ar initialized on the loop and incremented. 
+
 for (int i = 1, fireI = 1, electricI = 1; i < 100; i++, fireI++, electricI++)
 {
     if (fireI == 3)
@@ -7,7 +8,7 @@ for (int i = 1, fireI = 1, electricI = 1; i < 100; i++, fireI++, electricI++)
         fireI = 0;
     }
 
-    else if (electricI == 5)
+    else if (electricI == 5)
     {
         Console.WriteLine("Electric");
         electricI = 0;
