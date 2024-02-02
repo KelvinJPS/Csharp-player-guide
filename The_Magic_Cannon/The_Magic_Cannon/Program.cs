@@ -1,29 +1,30 @@
 ﻿// Fire blast ocurr at  the 3th turn and electric blast occur at the 5th, indexer ar initialized on the loop and incremented. 
 
-for (int i = 1, fireI = 1, electricI = 1; i < 100; i++, fireI++, electricI++)
+for (int i = 1;  i < 100; i++)
 {
-    if (fireI == 3)
+
+    if( i % 3  == 0 && i % 5 == 0 )
     {
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("Electric and fire");
+    }
+    
+   else if (i % 3 == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Fire");
-        fireI = 0;
     }
 
-    else if (electricI == 5)
+    else if (i == 5)
     {
+        Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("Electric");
-        electricI = 0;
     }
     else
     {
+        Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("Normal");
     }
-    // Reset fireI and electricI After every 10 iterations
-
-    if (i % 10 == 0)
-    {
-        fireI = 1;
-        electricI = 1;
     }
-}
 
 
